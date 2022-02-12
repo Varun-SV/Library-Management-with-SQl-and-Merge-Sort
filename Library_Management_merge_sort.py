@@ -543,10 +543,8 @@ elif stop == 2:
         t.sleep(delaytime / 1000)
 
     print("\n\t\t\t || Welcome to Library Management or Student || ")
-    # print("\n1.Login for an Existing Student.\n2.Go Back to previous Menu.\n3.Exit\n")
-    # studop=int(input("\nEnter your Choice : "))
 
-    # if studop==1:
+
     if loginstudent():
         print("\nLogin Successfull.\n")
         print("Loading...", end="")
@@ -581,21 +579,7 @@ elif stop == 2:
                 t.sleep(1.000)
         else:
             print("\nLogin Details Not Found!!!")
-        # elif studop == 2:
-        #     print("Loading ...")
-        #     for i in range(0, 5):
-        #         delaytime = (random.randint(250, 1000))
-        #         print(".....")
-        #         t.sleep(delaytime / 1000)
-        #
-        # elif studop == 3:
-        #     print("\nThank You!!!")
-        #     t.sleep(1.000)
-        #     exit(0)
-        #
-        # else:
-        #     print("\nChoose from the given Options !!! ")
-        #     t.sleep(1.000)
+
 
 elif stop == 3:
     print("\nThank You!!!")
