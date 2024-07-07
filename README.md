@@ -39,5 +39,5 @@ graph LR;
     Show_all_Students   -- Shows all students id --> StudentNumber & StudentName
     Student --> Login --> StudentLogin --> Book_List & Book_Details
     Book_List -- Lists The Names of Books available in the Library --> Book_Number & Book_Name
-    Book_Details -- Contains all information about the book --> Choice --> Book_Number --> Book_Serial_Number & Book_Name & Book_Author_name
+    Book_Details -- Contains all information about the book --> Book_Choice --> Book_Number --> Book_Serial_Number & Book_Name & Book_Author_name
 ```
