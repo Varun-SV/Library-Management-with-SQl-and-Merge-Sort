@@ -22,8 +22,7 @@ other than the software developer or something like that.
 * This is the most basic but yet Example of what Merge Sort Can Do in terms of applicability.
 * This also shows that ir-respective of the type of data, if we program carefully we can implement the Merge Sort anywhere.
 
-#Flow of code
-
+# Flow of Code
 
 ```mermaid
 graph LR;
@@ -38,7 +37,7 @@ graph LR;
     Add_a_Student --> RegisterStudent --> FirstName & LastName & Password -- Sorts data in ascending order using merge Sort --> SortEverythingByName
     Remove_a_Student -- Enter SerialNumber --> Removed --> RemoveAnother --> Choice --> Y --> Remove_a_Student
     Show_all_Students   -- Shows all students id --> StudentNumber & StudentName
-    Login --> StudentLogin --> Book_List & Book_Details
+    Student --> Login --> StudentLogin --> Book_List & Book_Details
     Book_List -- Lists The Names of Books available in the Library --> Book_Number & Book_Name
     Book_Details -- Contains all information about the book --> Choice --> Book_Number --> Book_Serial_Number & Book_Name & Book_Author_name
 ```
