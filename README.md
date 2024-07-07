@@ -21,3 +21,24 @@ other than the software developer or something like that.
 # Result
 * This is the most basic but yet Example of what Merge Sort Can Do in terms of applicability.
 * This also shows that ir-respective of the type of data, if we program carefully we can implement the Merge Sort anywhere.
+
+#Flow of code
+
+
+```mermaid
+graph LR;
+    PythonCode -- ConnectionEstablishment --> MySQLServer
+    PythonCode -- InputsForLMS --> Staff & Student
+    Staff -- Options --> Register & Login 
+    Register -->RegisterStaff -- InputsForRegistrationofStaff --> FirstName & LastName & Password
+    Register -->RegisterStudent  
+    Login --> StaffLogin -- Options --> Store_a_Book & Delete_a_Book & Add_a_Student & Remove_a_Student & Show_all_Students
+    Store_a_Book --BookDetails --> BookName & AuthorName & SerialNumber
+    Delete_a_Book -- Enter Book Choice Of SerialNumber --> Removed --> RemoveAnother --> Choice --> Y --> Delete_a_Book
+    Add_a_Student --> RegisterStudent --> FirstName & LastName & Password -- Sorts data in ascending order using merge Sort --> SortEverythingByName
+    Remove_a_Student -- Enter SerialNumber --> Removed --> RemoveAnother --> Choice --> Y --> Remove_a_Student
+    Show_all_Students   -- Shows all students id --> StudentNumber & StudentName
+    Login --> StudentLogin --> Book_List & Book_Details
+    Book_List -- Lists The Names of Books available in the Library --> Book_Number & Book_Name
+    Book_Details -- Contains all information about the book --> Choice --> Book_Number --> Book_Serial_Number & Book_Name & Book_Author_name
+```
